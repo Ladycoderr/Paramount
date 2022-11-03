@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" data-textdirection="ltr">
+{% load static %}
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Paramount Global Ltd.</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/Asset 2.png' %}">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700" rel="stylesheet">
+    <!--Font icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-digimedia-v3.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animated.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/fonts/themify/style.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/fonts/flag-icon-css/css/flag-icon.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/vendors/animate/animate.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/vendors/flipclock/flipclock.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/vendors/swiper/css/swiper.min.css' %}">
+    <!-- END VENDOR CSS-->
+    <!-- END CRYPTO CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/css/template-3d-animation.css' %}">
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+    <!-- END Custom CSS-->
+    <style>
+        .floating {
+            animation: up-down 2s ease-in-out infinite alternate-reverse both;
+        }
+
+        @keyframes up-down {
+            0% {
+                transform: translateY(10px);
+            }
+
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+
+<body class=" 1-column undefined  page-animated svg-wrapper" data-menu-open="hover" data-menu="">
+    <!-- Preloader | Comment below code if you don't want preloader-->
+    <div id="loader-wrapper">
+        <svg viewbox=" 0 0 512 512" id="loader">
+            <linearGradient id="loaderLinearColors" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="5%" stop-color="#28bcfd"></stop>
+                <stop offset="100%" stop-color="#1d78ff"></stop>
+            </linearGradient>
+            <g>
+                <circle cx="256" cy="256" r="150" fill="none" stroke="url(#loaderLinearColors)" />
+            </g>
+            <g>
+                <circle cx="256" cy="256" r="125" fill="none" stroke="url(#loaderLinearColors)" />
+            </g>
+            <g>
+                <circle cx="256" cy="256" r="100" fill="none" stroke="url(#loaderLinearColors)" />
+            </g>
+            <g>
+                <circle cx="256" cy="256" r="75" fill="none" stroke="url(#loaderLinearColors)" />
+            </g>
+            <circle cx="256" cy="256" r="60" fill="url(#loaderImage)" stroke="none" stroke-width="0" />
+
+            <!-- Change the preloader logo here -->
+            <defs>
+                <pattern id="loaderImage" height="20" width="20" patternContentUnits="objectBoundingBox">
+
+                </pattern>
+            </defs>
+        </svg>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <header class="page-header">
+        <!-- Horizontal Menu Start-->
+        <nav class="main-menu static-top navbar-dark navbar navbar-expand-lg fixed-top mb-1">
+            <div class="container">
+                 <a class="navbar-brand animated" data-animation="fadeInDown" data-animation-delay="1s"
+                    href="/"><img src="{% static 'img/logo2.png' %}" style="height:50px" alt="Crypto Logo" /><span
+                        class="brand-text">
+                        <span class="font-weight-bold">PARAMOUNT</span> GLOBAL</span>
+                    </a> 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div id="navigation" class="navbar-nav ml-auto">
+                        <ul class="navbar-nav mt-1">
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href="/">Home</a>
+                            </li>
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'about' %}>About Us</a>
+                            </li>
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'product' %}>Products</a>
+                            </li>
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'trading' %}>Trading</a>
+                            </li>
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'education' %}>Education</a>
+                            </li>
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'referral' %}>Referral</a>
+                            </li>
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'account' %}>Account</a>
+                            </li>
+                            {% comment %} <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'contact' %}>Contact</a>
+                            </li> {% endcomment %}
+                      
+                        </ul>
+                        <span id="slide-line"></span>
+                        <form class="form-inline mt-2 mt-md-0">
+                            <a class="btn btn-sm btn-gradient-purple btn-glow my-2 my-sm-0 animated"
+                                data-animation="fadeInDown" data-animation-delay="1.8s"
+                                href="https://member.pglfx.com/"
+                               >Sign in</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- /Horizontal Menu End-->
+    </header>
+<section class="container main-bg mb-5" style="margin-top: 100px;">
+    <div>
+     <h2 class="h1"><span class="lead bold" >Cookie Policy</span></h2>
+    </div>
+    <div >
+    <h3 style="color: lightskyblue">What are Cookies</h3>
+    </div>
+    <div>
+     <p>Cookies are small texts sent to your browser by the webpage you visit. It helps a website to remember the information related to your visit. The purpose of these cookies is to understand your search and provide you with the required content related to your search when you visit again on the web page. It helps a website create value for its visitors, enabling it to understand the need and making it easier for visitors to search a web page. Cookies may be used on some pages of the site for us to provide you with a more customised web  </p>
+    </div>
+    <div>
+     <h3 style="color: lightskyblue">Types of cookies we use</h3>
+    </div>
+    <div>
+     <p><b>Session cookies:</b> These are temporary cookies and these are deleted as soon as you close the browser. It 
+        helps us to provide you the best navigation experience on our website. You can always choose to decline 
+        session cookies but this may impact your navigation experience.</p>
+     <p><b>Analytical Cookies: </b>Analytical cookies may consist of more persistent or temporary cookies. It helps us 
+        understand how you use our website and for how long. These cookies don't collect personal identification but 
+        help us serve you with the best content.
+        <br><br>
+        <b>Functional cookies: </b>Functional cookies record your choice while visiting our website. It remembers the 
+        things such as your language selection or browser setting to provide you with an easy and fast interface on 
+        our website.
+        <br><br>
+        <b>Third party cookies: </b>Third party cookies help us provide you with content on your social media platforms. 
+        These cookies are used by third parties to allow them to understand your need and present you the content 
+        like texts or videos on their platform. You can disable these cookies in the browser’s privacy setting.
+        Example of third party cookies for the purpose of analytics and similar uses are as below:
+        <br><br>
+        <b>Google: </b>Google Analytics is used to track site statistics and user demographics, interests, and behavior on 
+        websites. We also use Google Search Console to help understand how our website visitors find our website 
+        and to improve our search engine optimization. Moreover, to learn more about how this analytics information 
+        may be used, and how to control the use of your information.
+        <br><br>
+        <b>Social Networks: </b>Third-party social networks that provide interactive plug-ins or social networking features 
+        on Global Shares websites, may use cookies or other methods to gather information regarding your use of our 
+        websites. The use of such information by a third party depends on the privacy policy available on that social 
+        network’s website, which we encourage you to carefully review. Such third parties may use these cookies or 
+        other tracking methods for their own purposes by relating information about your use of our site with any of 
+        your Personal Data that they may have.
+        <br><br>
+        As we are committed to your privacy and safety, we use these cookies to optimize the functionality of our 
+        website and present you the content in connection with your choice and preference </p>
+    </div>
+    <div>
+        <h3 style="color: lightskyblue">If you have any question or query related to cookies policy or cookies setting, please feel free to write us at <a href="mailTO:info@pglfx.com">info@pglfx.com</a></h3>
+       </div>
+   </section>
+   
+{% include 'footer.html' %}
+
+
+
+<!-- BEGIN VENDOR JS-->
+<script src="{% static 'theme-assets/vendors/vendors.min.js' %}"></script>
+<!-- BEGIN VENDOR JS-->
+<!-- BEGIN PAGE VENDOR JS-->
+<script src="{% static 'theme-assets/vendors/flipclock/flipclock.min.js' %}"></script>
+<script src="{% static 'theme-assets/vendors/swiper/js/swiper.min.js' %}"></script>
+<script src="{% static 'theme-assets/vendors/particles.min.js' %}"></script>
+<script src="{% static 'theme-assets/vendors/waypoints/jquery.waypoints.min.js' %}"></script>
+<!-- END PAGE VENDOR JS-->
+<!-- BEGIN THEME JS-->
+<script src="{% static 'theme-assets/js/theme.js' %}"></script>
+<!-- END CRYPTO JS-->
+<!-- BEGIN PAGE LEVEL JS-->
+<script src="{% static 'theme-assets/js/scripts/particles-type1.js' %}"></script>
+<!-- END PAGE LEVEL JS-->
+</body>
+</html>

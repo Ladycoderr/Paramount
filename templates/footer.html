@@ -1,0 +1,90 @@
+{% load static %}
+<footer class="footer static-bottom footer-dark footer-custom-class" data-midnight="white">
+    <div class="container">
+        <div class="footer-wrapper">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="about">
+                        <a  href="/" class="title animated" data-animation="fadeInUpShorter" data-animation-delay="0.2s">
+                            <img src="{% static 'img/logo3.png' %}" style="height:50px;width:50px;" alt="Logo">
+                            <span class="logo-text">PARAMOUNT GLOBAL</span>
+                        </a>
+                        {% comment %} <div class="about-text animated" data-animation="fadeInUpShorter"
+                            data-animation-delay="0.3s">
+                            <p class="grey-accent2">Registered add: Suit 305,Griffith corporate center, kingstown, st. vincent and the Grenadines.</p>
+                        </div> {% endcomment %}
+                        <ul class="social-buttons list-unstyled mb-5">
+                            <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.4s"><a
+                                    href="https://www.facebook.com/pglforex/" title="Facebook" class="btn font-medium"  target="_blank"><i
+                                        class="ti-facebook"></i></a></li>
+                                        <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.7s"><a
+                                            href="https://www.instagram.com/pglforex/" title="instgram" class="btn font-medium"  target="_blank"><i class="ti-instagram"></i></a>
+                                    </li>
+                            <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.5s"><a
+                                    href="https://twitter.com/pglforex" title="Twitter" class="btn font-medium"  target="_blank"><i
+                                        class="ti-twitter-alt"></i></a></li>
+                            <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.6s" ><a
+                                    href="" title="LinkedIn" class="btn font-medium"  target="_blank"><i
+                                        class="ti-linkedin"></i></a></li>
+                            
+                            {% comment %} <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.8s"><a
+                                    href="#" title="Pintrest" class="btn font-medium"><i
+                                        class="ti-pinterest"></i></a></li> {% endcomment %}
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="links">
+                        <h5 class="title animated mb-0 clr-black" data-animation="fadeInUpShorter" data-animation-delay="0.5s" style="">
+                            Useful Links</h5>
+                        <ul class="useful-links float-left mr-5">
+                            <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.6s"><a
+                                href={% url 'about' %}>About Us</a></li>
+                            <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.7s"><a
+                                href={% url 'product' %}>Products</a></li>
+                            <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.8s"><a
+                                    href={% url 'trading' %}>Trading </a></li>
+                                    <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.8s"><a
+                                        href={% url 'education' %}>Education </a></li>
+                                        <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.8s"><a
+                                            href={% url 'referral' %}>Referral  </a></li>
+                                            <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.8s"><a
+                                                href={% url 'account' %}>Account</a></li>
+                                                <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.8s"><a
+                                                    href={% url 'cookies' %}>Cookies</a></li>
+                                                    <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.8s"><a
+                                                        href={% url 'privacyPolicy' %}>Privacy Policy</a></li>
+                                                        <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.8s"><a
+                                                            href={% url 'disclosure' %}>Disclosure</a></li>
+                                    </ul>
+                        {% comment %} <ul class="useful-links">
+                            <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.9s"><a
+                                    href="#">Roadmap</a></li>
+                            <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="1.0s"><a
+                                    href="#">Team</a></li>
+                            <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="1.1s"><a
+                                    href="#">Sign in</a></li>
+                        </ul> {% endcomment %}
+                    </div>
+                </div>
+               <div class="col-lg-4">
+                <div class="about-text animated" data-animation="fadeInUpShorter"
+                data-animation-delay="0.3s">
+                <p class="grey-accent2">Registered add: 71-75 Shelton Street Convent Garden
+                    London United Kingdom WC2H 9JQ</p>
+            </div>
+            <div class="about-text animated" data-animation="fadeInUpShorter"
+            data-animation-delay="0.3s">
+            <p class="grey-accent2">Phone no: +447441428363</p>
+            <p class="grey-accent2">Email: info@pglfx.com || support@pglfx.com</p>
+        
+            
+        </div>
+                </div> 
+            </div>
+            <div class="copy-right mx-auto text-center">
+                <span class="copyright">Copyright &copy; 2022, Paramount Global  </span>
+            </div>
+        </div>
+    </div>
+</footer>

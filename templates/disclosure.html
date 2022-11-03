@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" data-textdirection="ltr">
+{% load static %}
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Paramount Global Ltd.</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/Asset 2.png' %}">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700" rel="stylesheet">
+    <!--Font icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-digimedia-v3.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animated.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/fonts/themify/style.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/fonts/flag-icon-css/css/flag-icon.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/vendors/animate/animate.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/vendors/flipclock/flipclock.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/vendors/swiper/css/swiper.min.css' %}">
+    <!-- END VENDOR CSS-->
+    <!-- END CRYPTO CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'theme-assets/css/template-3d-animation.css' %}">
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+    <!-- END Custom CSS-->
+    <style>
+        .floating {
+            animation: up-down 2s ease-in-out infinite alternate-reverse both;
+        }
+
+        @keyframes up-down {
+            0% {
+                transform: translateY(10px);
+            }
+
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+
+<body class=" 1-column undefined  page-animated svg-wrapper" data-menu-open="hover" data-menu="">
+    <!-- Preloader | Comment below code if you don't want preloader-->
+    <div id="loader-wrapper">
+        <svg viewbox=" 0 0 512 512" id="loader">
+            <linearGradient id="loaderLinearColors" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="5%" stop-color="#28bcfd"></stop>
+                <stop offset="100%" stop-color="#1d78ff"></stop>
+            </linearGradient>
+            <g>
+                <circle cx="256" cy="256" r="150" fill="none" stroke="url(#loaderLinearColors)" />
+            </g>
+            <g>
+                <circle cx="256" cy="256" r="125" fill="none" stroke="url(#loaderLinearColors)" />
+            </g>
+            <g>
+                <circle cx="256" cy="256" r="100" fill="none" stroke="url(#loaderLinearColors)" />
+            </g>
+            <g>
+                <circle cx="256" cy="256" r="75" fill="none" stroke="url(#loaderLinearColors)" />
+            </g>
+            <circle cx="256" cy="256" r="60" fill="url(#loaderImage)" stroke="none" stroke-width="0" />
+
+            <!-- Change the preloader logo here -->
+            <defs>
+                <pattern id="loaderImage" height="20" width="20" patternContentUnits="objectBoundingBox">
+
+                </pattern>
+            </defs>
+        </svg>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <header class="page-header">
+        <!-- Horizontal Menu Start-->
+        <nav class="main-menu static-top navbar-dark navbar navbar-expand-lg fixed-top mb-1">
+            <div class="container">
+                 <a class="navbar-brand animated" data-animation="fadeInDown" data-animation-delay="1s"
+                    href="/"><img src="{% static 'img/logo2.png' %}" style="height:50px" alt="Crypto Logo" /><span
+                        class="brand-text">
+                        <span class="font-weight-bold">PARAMOUNT</span> GLOBAL</span>
+                    </a> 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div id="navigation" class="navbar-nav ml-auto">
+                        <ul class="navbar-nav mt-1">
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href="/">Home</a>
+                            </li>
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'about' %}>About Us</a>
+                            </li>
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'product' %}>Products</a>
+                            </li>
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'trading' %}>Trading</a>
+                            </li>
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'education' %}>Education</a>
+                            </li>
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'referral' %}>Referral</a>
+                            </li>
+                            <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'account' %}>Account</a>
+                            </li>
+                            {% comment %} <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
+                                <a class="nav-link" href={% url 'contact' %}>Contact</a>
+                            </li> {% endcomment %}
+                      
+                        </ul>
+                        <span id="slide-line"></span>
+                        <form class="form-inline mt-2 mt-md-0">
+                            <a class="btn btn-sm btn-gradient-purple btn-glow my-2 my-sm-0 animated"
+                                data-animation="fadeInDown" data-animation-delay="1.8s"
+                                href="https://member.pglfx.com/"
+                               >Sign in</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- /Horizontal Menu End-->
+    </header>
+    <!-- /Header End-->
+
+<section class="container main-bg mb-5" style="margin-top: 100px;">
+    <div>
+    <h2 class="h1" style="color: lightskyblue"><span class="lead bold" >Risk Disclosure Statement</span></h2>
+    <p>Financial Markets involve significant level of risk of loss and may not be suitable for 
+        all the investors. Before taking decision to start investing in financial Instruments 
+        such as Forex, Cryptocurrencies, Stocks, Commodities or CFDs, you should carefully 
+        consider you financial objectives, level of experience and risk appetite. 
+        <br /><br />
+        Any opinion, news, research, analysis, price or other information contained does not 
+        provide investment advice.
+        <br /><br /> 
+        Your account is held and maintained by Paramount Global Limited who serves as a 
+        clear agent and counterparty to your trades. Paramount Global Limited is located at 
+        71-75 Shelton Street Convent Garden London United Kingdom.
+        
+        </p>
+    
+    <h2 class="h1" style="color: lightskyblue"><span class="lead bold" >Content For Risk Disclosure Agreement</span></h2>
+    <p>Financial Markets involve significant level of risk of loss and may not be suitable for all the investors. Before taking decision to start investing in financial market, you should carefully consider you financial objectives, level of experience and risk appetite.
+        <br /><br />
+        Any opinion, news, research, analysis, price or other information contained does not provide investment advice.
+        <br /><br />
+        Your account is held and maintained by Paramount Global Limited who serves as a clear agent and counterparty to your trades. Paramount Global Limited is located at 71-73 Shelton Street Convent Garden London United Kingdom.
+        <br /><br />
+        In consideration to Paramount Global Limited agreeing to enter into a contract with you (hereinafter referred to as the “Client“), Client acknowledges, understands and agrees that:
+        <br /><br />
+        <b style="color: lightskyblue">1. Trading in financial market is very speculative.</b> Trading in forex, commodities, cryptocurrencies, CFDs, stocks is highly speculative and is suitable only for those customers who (a) understand and are willing to assume the economic, legal and other risk involved, and (b) are financially able to see losses in excess to margins.
+        <br /><br />
+        <b style="color: lightskyblue">2. Risk of Lower Liquidity.</b> Liquidity refers to the ability of market participants to buy and/or sell securities / derivatives contracts expeditiously at a competitive price and with minimal price difference. There may be a risk of lower liquidity in some securities / derivatives contracts as compared to active securities / derivatives contracts. As a result, your order may only be partially executed, or may be executed with relatively greater price difference or may not be executed at all.
+        <br /><br />
+        <b style="color: lightskyblue">3. Risk of Wider Spreads.</b> Spread refers to the difference in best buy price and best sell price. It represents the differential between the price of buying a security / derivatives contract and immediately selling it or vice versa. Lower liquidity and higher volatility may result in wider than normal spreads for less liquid or illiquid securities / derivatives contracts. This in turn will hamper better price formation.
+        <br /><br />
+        <b style="color: lightskyblue">4. Risk reducing orders.</b> The placing of orders (e.g., "stop loss” orders, or "limit" orders) which are intended to limit losses to certain amounts may not be effective many a time because rapid movement in market conditions may make it impossible to execute such orders.
+        <br /><br />
+        <b style="color: lightskyblue">5. Currency Risk.</b> Where trading contracts or other investments are denominated in currencies other than your reference currency, there is the risk that if the foreign exchange market moves against you, then upon maturity the net proceeds converted into your currency may be significantly less than the value at the time of entering the contract.
+        <br /><br />
+        <b style="color: lightskyblue">6. Risk of Rumors.</b> Rumors Obout companies / currencies Ot times float in the market through word of mouth, newspapers, websites or news agencies, etc. The investors should be wary of and should desist from acting on rumors.
+        <br /><br />
+        <b style="color: lightskyblue">7. System Risk.</b> High volume trading will frequently occur at the market opening and before market close. Such high volumes may also occur at any point in the day. This may cause delay in order of execution or confirmation.
+        <br /><br />
+        <b style="color: lightskyblue">8. Leverage Risk.</b> In the derivatives market, the amount of margin is small relative to the value of the derivatives contract so the transactions are 'leveraged' or 'geared'. Derivatives trading, which is conducted with O relatively smOII Omount of margin, provides the possibility of great profit or loss in comparison with the margin amount. But transactions in derivatives carry a high degree of risk.
+        <br /><br />
+        You should therefore completely understand the following statements before actually trading in derivatives and also trade with caution while taking into account one's circumstances, financial resources, etc.
+            
+    </p>
+
+    <h2 style="color: lightskyblue">Acknowledgement:</h2>
+    <br /><br />
+    <p>By entering into any transaction, you confirm that you have carefully read and fully understood the Risk Disclosure statement pertaining to the nature of transactions' terms and conditions pertaining to transaction and margin requirements. You further acknowledge that:</p>
+    <p>1.	You  are familiar with and fully aware with the risk involved related to transactions.<br />
+        2.	You are willing to take all such risks.<br />
+        3.	You are capable of bearing a full loss of amount as a result of any transaction entered into with
+        broker.<br />
+        4.	Neither the company, nor any of its employee have made any recommendation or given any
+        advice as to the terms of profitability of the transaction.
+        </p>
+    <h2 style="color: lightskyblue">Disclaimer:</h2>
+    <p>1. We do not provide any tax advice of any nature though, we may provide some information or express opinions time to time, and such information or opinions are not offered as tax advice.
+        <br /><br />
+        2.	If you are in any doubt about the risk involved in any trading or investment or you are uncertain of the Risk Disclosure statement, you should seek professional advice.
+        <br /><br />
+        3.	You also confirm that you are aware of all applicable laws to which you are subjected to and that you are entitled and/or authorized under or by such laws and regulations to enter into any transaction.
+        </p>
+    </div>
+
+</section>
+
+{% include 'footer.html' %}
+
+
+
+<!-- BEGIN VENDOR JS-->
+<script src="{% static 'theme-assets/vendors/vendors.min.js' %}"></script>
+<!-- BEGIN VENDOR JS-->
+<!-- BEGIN PAGE VENDOR JS-->
+<script src="{% static 'theme-assets/vendors/flipclock/flipclock.min.js' %}"></script>
+<script src="{% static 'theme-assets/vendors/swiper/js/swiper.min.js' %}"></script>
+<script src="{% static 'theme-assets/vendors/particles.min.js' %}"></script>
+<script src="{% static 'theme-assets/vendors/waypoints/jquery.waypoints.min.js' %}"></script>
+<!-- END PAGE VENDOR JS-->
+<!-- BEGIN THEME JS-->
+<script src="{% static 'theme-assets/js/theme.js' %}"></script>
+<!-- END CRYPTO JS-->
+<!-- BEGIN PAGE LEVEL JS-->
+<script src="{% static 'theme-assets/js/scripts/particles-type1.js' %}"></script>
+<!-- END PAGE LEVEL JS-->
+</body>
+</html>
